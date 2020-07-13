@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Pricefx API">
+    <CLASSES>
+      <root url="jar://$APPLICATION_PLUGINS_DIR$/pricefx-studio-idea/lib/logic-debug.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$APPLICATION_PLUGINS_DIR$/pricefx-studio-idea/lib/core-app-docs-5.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>
