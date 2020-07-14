@@ -13,7 +13,8 @@
     "allowOverride" : false,
     "combinationType" : "FUNCTION",
     "displayOptions" : 0,
-    "elementName" : "Contract",
+    "elementGroups" : [ ],
+    "elementName" : "Rebates",
     "elementTimeout" : 0,
     "hideOnNull" : false,
     "hideWarnings" : false,
@@ -22,15 +23,15 @@
     "allowOverride" : false,
     "combinationType" : "FUNCTION",
     "displayOptions" : 0,
-    "elementName" : "Lines",
+    "elementName" : "RebateLines",
     "elementTimeout" : 0,
     "hideOnNull" : false,
     "hideWarnings" : false,
     "summarize" : false
   } ],
   "inputDescriptors" : [ ],
-  "label" : "Test India",
+  "label" : "INDIA-Rebate Query",
   "status" : "INACTIVE",
-  "uniqueName" : "____TEST_INDIA____",
+  "uniqueName" : "_INDIA-RebatesQuery",
   "validAfter" : "2020-01-01"
 }

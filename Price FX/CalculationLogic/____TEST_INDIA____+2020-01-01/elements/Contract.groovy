@@ -1,17 +1,21 @@
 
-def contractName = "C-9459"
-//def contracts = api.find("CT", 0,1,"-lastUpdateDate",Filter.equal("uniqueName",contractName))
+def contractName = "C-9390"
+def contracts = api.find("CT", 0,1,"-lastUpdateDate",Filter.equal("uniqueName",contractName))
 
-def contracts = api.find("CT", 0,1,"-lastUpdateDate",["inputsJson","outputsJson"], Filter.equal("uniqueName",contractName))
+api.trace("Contracts",null,contracts)
+
+for (contract in contracts) {
+    api.trace("Contract","", contract)
+}
+
+contracts = api.find("CT", 0,1,"-lastUpdateDate",["inputsJson","outputsJson"], Filter.equal("uniqueName",contractName))
 
 if (contracts) {
-        outputs = Library.stringToList(contracts[0].outputsJson)
-        api.trace("outputs ------>",null,api.jsonEncode(outputs))
         inputs = Library.stringToList(contracts[0].inputsJson)
-        api.trace("inputs ------>",null,api.jsonEncode(inputs))
-      }
-
-api.trace("Contracts","", contracts)
+        api.trace("Inputs",null,api.jsonEncode(inputs))
+        outputs = Library.stringToList(contracts[0].outputsJson)
+        api.trace("Outputs",null,api.jsonEncode(outputs))
+}
 
 for (contract in contracts) {
 
