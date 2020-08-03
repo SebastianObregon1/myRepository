@@ -7,5 +7,6 @@ CONNECTIONS = [
         ],
         'DEV' : [
                 'ad-india-dev': ['https://ad-qa.pricefx.eu'],
+                'ad-brazil'   : ['https://ad-qa.pricefx.eu'],
         ],
 ]

@@ -1,7 +1,7 @@
 class fiscalCalendarBuilder {
     def seedDateStr = '2013/12/29' //Must be day 1 of 371 days long year.
     def startDateStr = '2021/01/01'
-    def numberOfDays = 6600
+    def numberOfDays = 600
     def daysInSevenYearsSet = 2191
     def fileName = 'FiscalCalendar.txt'
     def debug = 0
@@ -57,7 +57,7 @@ class fiscalCalendarBuilder {
         file.append("Fiscal_MO_SHORT_NAME;")
         file.append("Fiscal_QUARTER_SHORT_NAME;")
         file.append("Fiscal_YR_SHORT_NAME;")
-        file.append("Fical_DAY_IN_WK_NUM;")
+        file.append("Fiscal_DAY_IN_WK_NUM;")
         file.append("Fiscal_DAY_IN_MO_NUM;")
         file.append("Fiscal_DAY_IN_QUARTER_NUM;")
         file.append("Fiscal_DAY_IN_YR_NUM; ")
@@ -67,7 +67,7 @@ class fiscalCalendarBuilder {
         file.append("Fiscal_WK_IN_YR_NUM;")
         file.append("Fiscal_MO_IN_QUARTER_NUM;")
         file.append("Fiscal_MON_IN_YR_NUM;")
-        file.append("Fical_YR_NUM;")
+        file.append("Fiscal_YR_NUM;")
         file.append("Holiday_IND;")
         file.append("JULIAN_DT_NUM;")
         file.append("PREV_Fiscal_YR_WKDY_DT;")
