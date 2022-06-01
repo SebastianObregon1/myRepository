@@ -13,7 +13,7 @@ app.setup("ad-na2")
 app.openDBConnection()
 
 println "${new Date().toString()} - Pulling Quotes from Price FX";
-//app.pullQuotes()
+app.pullQuotes()
 
 println "${new Date().toString()} - Pulling Products from Price FX";
 //app.pullProducts()
